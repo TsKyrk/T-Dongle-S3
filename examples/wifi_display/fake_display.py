@@ -9,15 +9,15 @@ mono_font = font.Font(family="Courier New", size=12)
 
 text = tk.Text(
     root,
-    width=13,      # 13 caractères par ligne
-    height=5,      # 5 lignes
+    width=13,      # 13 characters per line
+    height=5,      # 5 lines
     font=mono_font,
-    wrap="char"    # passage à la ligne au 14e caractère
+    wrap="char"    # wrap at the 14th character
 )
 
 text.pack(padx=10, pady=10)
 
-# Exemple : écriture UNIQUE de 65 caractères
+# Example: single write of 65 characters
 data = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 text.insert("1.0", data[:65])
 
